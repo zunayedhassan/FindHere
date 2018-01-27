@@ -297,12 +297,7 @@ public class Program extends BorderPane {
                         String command = "";
                         
                         if (OsValidator.IS_WINDOWS()) {
-                            if (!file.isFile()) {
-                                command = "explorer.exe " + path;
-                            }
-                            else {
-                                command = "explorer.exe " + path;
-                            }
+                            command = "explorer.exe " + path;
                         }
                         else if (OsValidator.IS_MAC()) {
                             command = "open " + path;
